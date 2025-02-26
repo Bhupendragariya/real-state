@@ -5,7 +5,8 @@ import Footer from './componant/footer'
 import Home from './componant/Home'
 import Gallery from './componant/Gallery'
 import Blog from './componant/blog'
-import { createBrowserRouter, RouterProvider } from "react-router"
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
 
 
 const router = createBrowserRouter([
