@@ -10,16 +10,26 @@ import line from "../assets/image/line(1).png"
 import rent from "../assets/image/Group17(1).png"
 import sell from "../assets/image/Frame82(1).png"
 import { NavLink } from "react-router-dom";
+import { useState } from 'react'
 
 
 
 
 export default function HeaderTop() {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+
     
-  function hendelemenu(){
-    document.getElementById("nave-dail").classList.toggle("hidden");
-    document.getElementById("select-search").classList.toggle("hidden");
-  }
+  function handleMenuToggle(){
+    setIsMenuOpen(!isMenuOpen)
+
+  };
+ 
+  
+  
+ 
+  
  
   return (
     <>
@@ -51,20 +61,20 @@ export default function HeaderTop() {
             <NavLink to="/">home</NavLink>
             <NavLink to="/">about us</NavLink>
             <NavLink to="/">our agents</NavLink>
-            <NavLink to="/galleary">galleary</NavLink>
+            <NavLink to="/gallery">gallery</NavLink>
             <NavLink to="/blog">blog</NavLink>
             <NavLink to="/">contactus</NavLink>
             <NavLink to="/">serach</NavLink>
             <NavLink to="/"><button type='button' className='border border-white px-4 py-1 rounded-lg capitalize '>addlisting</button></NavLink>
           </div>
-          <button className='lg:hidden  ' onClick={hendelemenu}>
-            <i class="fa-solid fa-bars"></i>
+          <button className='lg:hidden  ' onClick={handleMenuToggle}>
+            <i className="fa-solid fa-bars"></i>
           </button>
-          <div className=' lg:hidden fixed bg-white inset-0 px-3 ' id='nave-dail'  >
+          <div className={`lg:hidden fixed bg-white inset-0 px-3 transition-transform duration-300 ${isMenuOpen? "translate-x-0" : "-translate-x-full"}  `}  >
             <div className='flex justify-between pt-3 '>
             <a className='w-15' href=""><img src={logotop} alt="logotop" /></a>
-              <button className='lg:hidden ' type='button' onClick={hendelemenu}>
-                <i class="fa-solid fa-xmark"></i>
+              <button className='lg:hidden ' type='button' onClick={handleMenuToggle} id='hide-button'>
+                <i className="fa-solid fa-xmark"></i>
               </button>
             </div>
             <div >
@@ -72,7 +82,7 @@ export default function HeaderTop() {
                 <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink  to="/">home</NavLink></li>
                 <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/">about us</NavLink></li>
                 <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/">our agents</NavLink></li>
-                <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/galleary">galleary</NavLink></li>
+                <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/gallery">gallery</NavLink></li>
                 <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/blog">blog</NavLink></li>
                 <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/">contactus</NavLink></li>
                 <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/">serach</NavLink></li>
@@ -96,22 +106,22 @@ export default function HeaderTop() {
 
 
       </div>
-      <div  className='max-w-[1200px]  mx-auto   '  id='select-search '>
+      <div  className={`max-w-[1200px]  mx-auto ${isMenuOpen? "hidden" : "show"}`} >
         <div className=' lg:flex lg:max-w-[800px]  text-center items-center lg:gap-5   lg:rounded-xl bg-white  lg:absolute md:top-[27rem] justify-items-center lg:left-1/2 transform lg:-translate-x-1/2' >
           <div className='grid md:gap-1 m-3 p-1  '>
-            <label for="location" className='text-center font-bold'>Location</label>
+            <label htmlFor="location" className='text-center font-bold'>Location</label>
             <select id="location">
               <option value="location " className='text-[0.9rem] font-stretch-50%'>Select your city </option>
             </select>
           </div>
           <div className='grid md:gap-1 m-3 p-1'>
-            <label for="Property" className='text-center font-bold'>Property Type</label>
+            <label htmlFor="Property" className='text-center font-bold'>Property Type</label>
             <select id="property">
               <option value="property" className='text-[0.9rem] font-stretch-50%' >Select your property </option>
             </select>
           </div>
           <div className='grid md:gap-1 m-3 p-1'>
-            <label for="rent" className='text-center font-bold'>Rent Range</label>
+            <label htmlFor="rent" className='text-center font-bold'>Rent Range</label>
             <select id="rent">
               <option value="rent" className='text-[0.9rem] font-stretch-50%'>Select your rent range </option>
             </select>

@@ -1,17 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import socialone from "../assets/image/SocialMediacard(1).png"
 import socialtwo from "../assets/image/SocialMediacard(2).png"
 import socialthree from "../assets/image/SocialMediacard(3).png"
 import socialfour from "../assets/image/SocialMediacard(4).png"
 import line from "../assets/image/line(1).png"
 import logotop from "../assets/image/logo(1).png"
-import { NavLink } from 'react-router'
+import { NavLink } from 'react-router-dom'
 
 
 export default function Header() {
-    function hendelemenu(){
-        document.getElementById('nave-dail').classList.toggle('hidden')
-    }
+     const [isMenuOpen, setIsMenuOpen] = useState(false);
+   
+   
+       
+     function handleMenuToggle(){
+       setIsMenuOpen(!isMenuOpen)
+   
+     };
     
 
     return (
@@ -41,20 +46,20 @@ export default function Header() {
                         <NavLink to="/">home</NavLink>
                         <NavLink to="/">about us</NavLink>
                         <NavLink to="/">our agents</NavLink>
-                        <NavLink to="/galleary">galleary</NavLink>
+                        <NavLink to="/gallery">gallery</NavLink>
                         <NavLink to="/blog">blog</NavLink>
                         <NavLink to="/">contactus</NavLink>
                         <NavLink to="/">serach</NavLink>
                     </div>
-                    <button className='lg:hidden  ' onClick={hendelemenu}>
-                        <i class="fa-solid fa-bars"></i>
+                    <button className='lg:hidden  ' onClick={handleMenuToggle}>
+                        <i className="fa-solid fa-bars"></i>
                     </button>
                 </div>
-                <div className=' lg:hidden fixed bg-white inset-0 px-3' id='nave-dail'  >
+                <div className={`lg:hidden fixed bg-white inset-0 px-3 transition-transform duration-300 ${isMenuOpen? "translate-x-0" : "-translate-x-full"} `}  >
                     <div className='flex justify-between pt-3 '>
                         <a className='w-20' href=""><img src={logotop} alt="logotop" /></a>
-                        <button className=' ' type='button' onClick={hendelemenu}>
-                            <i class="fa-solid fa-xmark"></i>
+                        <button className=' ' type='button' onClick={handleMenuToggle}>
+                            <i className="fa-solid fa-xmark"></i>
                         </button>
                     </div>
                     <div >
@@ -62,7 +67,7 @@ export default function Header() {
                             <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/">home</NavLink></li>
                             <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/">about us</NavLink></li>
                             <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/">our agents</NavLink></li>
-                            <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/galleary">galleary</NavLink></li>
+                            <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/gallery">gallery</NavLink></li>
                             <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/blog">blog</NavLink></li>
                             <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/">contactus</NavLink></li>
                             <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/">serach</NavLink></li>
