@@ -56,7 +56,7 @@ export default function Header() {
                         <i className="fa-solid fa-bars"></i>
                     </button>
                 </div>
-                <div className={`lg:hidden fixed bg-white inset-0 px-3 transition-transform duration-300 ${isMenuOpen? "translate-x-0" : "-translate-x-full"} `}  >
+                <div className={`lg:hidden fixed bg-white inset-0 z-10 px-3 transition-transform duration-300 ${isMenuOpen? "translate-x-0" : "-translate-x-full"} `}  >
                     <div className='flex justify-between pt-3 '>
                         <a className='w-20' href=""><img src={logotop} alt="logotop" /></a>
                         <button className=' ' type='button' onClick={handleMenuToggle}>
