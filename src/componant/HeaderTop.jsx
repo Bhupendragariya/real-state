@@ -6,7 +6,7 @@ import socialthree from "../assets/image/SocialMediacard(3).png"
 import socialfour from "../assets/image/SocialMediacard(4).png"
 import logomain from '../assets/image/logo.png'
 import logotop from "../assets/image/logo(1).png"
-import line from "../assets/image/line(1).png"
+import line from "../assets/image/Line(1).png"
 import rent from "../assets/image/Group17(1).png"
 import sell from "../assets/image/Frame82(1).png"
 import { NavLink } from "react-router-dom";
