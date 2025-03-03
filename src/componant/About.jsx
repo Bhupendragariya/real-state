@@ -28,7 +28,7 @@ export default function About() {
       </div>
 
       <div className='max-w-[1000px] mx-auto p-2  pb-[5rem]'>
-        <div className=' md:grid md:grid-cols-2  gap-30 pt-[5rem]  items-center '>
+        <div className=' md:grid md:grid-cols-2  gap-30 pt-[5rem]  items-center  w-full'>
           <div className=' relative justify-items-center'>
             <div className='absolute'>
               <img src={group} alt="" className='tp-0 -ml-30' />
@@ -37,18 +37,18 @@ export default function About() {
                <img src={mackgroup} alt=""  className='object-cover'/>
             </div>
             
-            <div className='absolute '>
+            <div className='absolute justify-items-center '>
               <img src={groupone} alt=""  className='-mt-30 '/>
             </div>
           </div>
           <div className=' items-center pt-[5rem] '>
-            <h2 className='text-2xl font-bold leading-8 text-balance '>We make it easy for tenants and landlords</h2>
+            <h2 className='text-2xl font-bold leading-8 '>We make it easy for tenants and landlords</h2>
             <br />
-            <p className='text-[0.8rem] leading-5 text-balance'>Whether it’s selling your current home, getting financing, or buying a new home, we make it easy  and efficient. The best part? you’ll save a bunch of money and time with our services. Whether it’s selling your current home, getting financing, or buying a new home, we make it easy  and efficient. The best part? you’ll save a bunch of money and time with our services.</p>
+            <p className='text-[0.8rem] leading-5 '>Whether it’s selling your current home, getting financing, or buying a new home, we make it easy  and efficient. The best part? you’ll save a bunch of money and time with our services. Whether it’s selling your current home, getting financing, or buying a new home, we make it easy  and efficient. The best part? you’ll save a bunch of money and time with our services.</p>
             <br />
-            <p className='text-[0.8rem] leading-5 text-balance'>Whether it’s selling your current home, getting financing, or buying a new home, we make it easy  and efficient. The best part? you’ll save a bunch of money and time with our services.</p>
+            <p className='text-[0.8rem] leading-5 '>Whether it’s selling your current home, getting financing, or buying a new home, we make it easy  and efficient. The best part? you’ll save a bunch of money and time with our services.</p>
             <br />
-            <p className='text-[0.8rem] leading-5 text-balance'>Whether it’s selling your current home, getting financing, or buying a new home, we make it easy  and efficient. The best part? you’ll save a bunch of money and time with our services</p>
+            <p className='text-[0.8rem] leading-5 '>Whether it’s selling your current home, getting financing, or buying a new home, we make it easy  and efficient. The best part? you’ll save a bunch of money and time with our services</p>
           </div>
 
         </div>
@@ -59,7 +59,7 @@ export default function About() {
 
         </div>
         <div className='md:grid md:grid-cols-2  gap-30 pt-[5rem]  items-center '>
-          <div  className='relative justify-items-center bg-cover'>
+          <div  className='relative justify-items-center bg-cover justify-self-center'>
             <div className='absolute  md:pt-10 pl-10 pr-20 pt-5 '>
               <h3 className='text-2xl  text-balance '>The new way to find your new home</h3>
               <br />
@@ -78,7 +78,7 @@ export default function About() {
               <p className='text-[0.8rem] text-balance  pt-4 md:text-start text-center'>We offer our customer property protection of liability coverage and insurance for their better life.</p>
             </div>
             <div className='justify-items-center md:justify-items-start md:pt-0 pt-6'>
-              <img src={iconone} alt="" />
+              <img src={icontwo} alt="" />
               <h4 className='text-xl font-bold  text-balance pt-4'>Property Insurance</h4>
               <p className='text-[0.8rem] text-balance pt-4 md:text-start text-center'>We offer our customer property protection of liability coverage and insurance for their better life.</p>
             </div>
