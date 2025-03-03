@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <>
         <div className=' max-w-[900px]  mx-auto p-3  mt-10 '>
-            <div className='   md:grid-cols-4 grid gap-10 grid-cols-2 md:px-3 px-10'>
+            <div className='   md:grid-cols-4 grid gap-20 grid-cols-2 md:px-3 px-5'>
                 <div className=' capitalize flex flex-col gap-4 items-start '>
                     <a href=""><img src={logo} alt="" /></a>
                     <p className='md:text-xl  '>contactus</p>
@@ -20,27 +20,27 @@ export default function Footer() {
                 </div>
                 <div className=' capitalize flex flex-col gap-4'>
                     <p className=' md:text-xl '>fetures</p>
-                    <Link to="/" className='text-[0.9rem] font-stretch-50%'>home</Link>
-                    <Link to="/" className='text-[0.9rem] font-stretch-50%'>became a host</Link>
-                    <Link to="/" className='text-[0.9rem] font-stretch-50%'>pricing</Link>
-                    <Link to="/blog" className='text-[0.9rem] font-stretch-50%'>blog</Link>
-                    <Link to="/contacus"  className='text-[0.9rem] font-stretch-50%'>contact</Link>
+                    <Link to="/" className='text-[0.8rem] font-stretch-50%'>home</Link>
+                    <Link to="/" className='text-[0.8rem] font-stretch-50%'>became a host</Link>
+                    <Link to="/" className='text-[0.8rem] font-stretch-50%'>pricing</Link>
+                    <Link to="/blog" className='text-[0.8rem] font-stretch-50%'>blog</Link>
+                    <Link to="/contacus"  className='text-[0.8rem] font-stretch-50%'>contact</Link>
                  
                 </div>
                 <div className=' capitalize flex flex-col gap-4 '>
                     <p className=' md:text-xl '>company</p>
-                    <Link to="/aboutus" className='text-[0.9rem] font-stretch-50%'>about us</Link>
-                    <Link to="/" className='text-[0.9rem] font-stretch-50%'>press</Link>
-                    <Link to="/contactus" className='text-[0.9rem] font-stretch-50%'>contact</Link>
-                    <Link to="/" className='text-[0.9rem] font-stretch-50%'>careers</Link>
-                    <Link to="/blog" className='text-[0.9rem] font-stretch-50%'>blog</Link>
+                    <Link to="/aboutus" className='text-[0.8rem] font-stretch-50%'>about us</Link>
+                    <Link to="/" className='text-[0.8rem] font-stretch-50%'>press</Link>
+                    <Link to="/contactus" className='text-[0.8rem] font-stretch-50%'>contact</Link>
+                    <Link to="/" className='text-[0.8rem] font-stretch-50%'>careers</Link>
+                    <Link to="/blog" className='text-[0.8rem] font-stretch-50%'>blog</Link>
                  
                 </div>
                 <div className=' capitalize flex flex-col gap-4 '>
                     <p className=' md:text-xl '>teram and police</p>
-                    <Link to="/" className='text-[0.9rem] font-stretch-50%'>terms of service</Link>
-                    <Link to="/" className='text-[0.9rem] font-stretch-50%'>privacy policy</Link>
-                    <Link to="/" className='text-[0.9rem] font-stretch-50%'>securcty</Link>
+                    <Link to="/" className='text-[0.8rem] font-stretch-50%'>terms of service</Link>
+                    <Link to="/" className='text-[0.8rem] font-stretch-50%'>privacy policy</Link>
+                    <Link to="/" className='text-[0.8rem] font-stretch-50%'>securcty</Link>
                  
                 </div>
             </div>
