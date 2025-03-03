@@ -21,7 +21,7 @@ import group10 from "../assets/image/Group10.png"
 import group11 from "../assets/image/Group11.png"
 import leftbutton from "../assets/image/Frame104.png"
 import rightbutton from "../assets/image/Frame103.png"
-import bottom from "../assets/image/calltoaction.png"
+import bottom from "../assets/image/Calltoaction.png"
 
 
 
