@@ -11,6 +11,7 @@ import rent from "../assets/image/Group17(1).png"
 import sell from "../assets/image/Frame82(1).png"
 import { NavLink } from "react-router-dom";
 import { useState } from 'react'
+import { Searchdata } from './Searchdata'
 
 
 
@@ -25,6 +26,8 @@ export default function HeaderTop() {
     setIsMenuOpen(!isMenuOpen)
 
   };
+
+
  
   
   
