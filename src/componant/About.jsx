@@ -83,12 +83,12 @@ export default function About() {
               <p className='text-[0.8rem] text-balance pt-4 lg:text-start text-center'>We offer our customer property protection of liability coverage and insurance for their better life.</p>
             </div>
             <div className='justify-items-center lg:justify-items-start lg:pt-0 pt-6'>
-              <img src={iconone} alt="" />
+              <img src={iconthree} alt="" />
               <h4 className='text-xl font-bold  text-balance pt-4'>Property Insurance</h4>
               <p className='text-[0.8rem] text-balance pt-4 lg:text-start text-center'>We offer our customer property protection of liability coverage and insurance for their better life.</p>
             </div>
             <div className='justify-items-center lg:justify-items-start lg:pt-0  pt-6'>
-              <img src={iconone} alt="" />
+              <img src={iconfour} alt="" />
               <h4 className='text-xl font-bold  text-balance  pt-4'>Property Insurance</h4>
               <p className='text-[0.8rem] text-balance pt-4 lg:text-start text-center '>We offer our customer property protection of liability coverage and insurance for their better life.</p>
             </div>
