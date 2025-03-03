@@ -3,7 +3,7 @@ import socialone from "../assets/image/SocialMediacard(1).png"
 import socialtwo from "../assets/image/SocialMediacard(2).png"
 import socialthree from "../assets/image/SocialMediacard(3).png"
 import socialfour from "../assets/image/SocialMediacard(4).png"
-import line from "../assets/image/line(1).png"
+import line from "../assets/image/Line(1).png"
 import logotop from "../assets/image/logo(1).png"
 import { NavLink } from 'react-router-dom'
 
