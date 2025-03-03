@@ -138,19 +138,19 @@ return (
                     <h5 className='font-bold text-xl'>Propertice by Are</h5>
                     <p className='md:w-xl justify-self-center pt-2 text-[0.9rem] font-stretch-50%'>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales ultrices nulla blandit volutpat.</p>
                 </div>
-                <div className='grid md:grid-cols-5 gap-3 grid-cols-3 pt-10 pb-5'> 
-                    <img className=' ' src={group7} alt="" />
-                    <img src={group8} alt="" />
-                    <img className='' src={group9} alt="" />
-                    <img className='md:block hidden' src={group10} alt="" />
-                    <img className='md:block hidden' src={group11} alt="" />
-                    
-                    
-                </div>
+                <div className="w-full overflow-x-auto flex space-x-4 pt-9 no-scrollbar "> 
+                    <img className="h-90 w-90 rounded-md" src={group7} alt="" />
+                    <img className="h-70 w-80 rounded-md" src={group8} alt="" />
+                    <img className="h-70 w-80 rounded-md" src={group9} alt="" />
+                    <img className="h-70 w-80 rounded-md" src={group10} alt="" />
+                    <img className="h-70 w-80 rounded-md" src={group11} alt="" />
+                    <img className="h-70 w-80 rounded-md" src={group10} alt="" />
+                </div> 
                 <div >
                     <button className='flex justify-self-center md:gap-5  gap-2'>
                         <img className='md:w-[30px] md:h-[30px] w-[20px] h-[20px]' src={leftbutton} alt="" /> <img className='md:w-[30px] md:h-[30px] w-[20px] h-[20px]' src={rightbutton} alt="" />
                     </button>
+                
                 </div>
             </div>
         </div>
