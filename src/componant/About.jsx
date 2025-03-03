@@ -6,10 +6,10 @@ import group from "../assets/image/Group.png"
 import groupone from "../assets/image/Group(1).png"
 import lllustration from "../assets/image/Illustration(1).png"
 import illustration from "../assets/image/MaskGroup(3).png"
-import iconone from "../assets/image/icon.png"
-import icontwo from "../assets/image/icon(1).png"
-import iconthree from "../assets/image/icon(2).png"
-import iconfour from "../assets/image/icon(3).png"
+import iconone from "../assets/image/Icon.png"
+import icontwo from "../assets/image/Icon(1).png"
+import iconthree from "../assets/image/Icon(2).png"
+import iconfour from "../assets/image/Icon(3).png"
 
 
 export default function About() {
