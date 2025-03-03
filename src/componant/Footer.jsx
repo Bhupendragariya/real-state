@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <>
         <div className=' max-w-[900px]  mx-auto p-3  mt-10 '>
-            <div className='   md:grid-cols-4 grid gap-20 grid-cols-2 md:px-3 px-5'>
+            <div className='   md:grid-cols-4 grid gap-10 grid-cols-2 md:px-3 px-5'>
                 <div className=' capitalize flex flex-col gap-4 items-start '>
                     <a href=""><img src={logo} alt="" /></a>
                     <p className='md:text-xl  '>contactus</p>
@@ -18,7 +18,7 @@ export default function Footer() {
 
                     <p className='text-[0.8rem] font-stretch-50% text-start'><Link href="">Email:exampal@email.com</Link></p>
                 </div>
-                <div className=' capitalize flex flex-col gap-4'>
+                <div className=' capitalize flex flex-col gap-4 md:pt-0 pt-15 '>
                     <p className=' md:text-xl '>fetures</p>
                     <Link to="/" className='text-[0.8rem] font-stretch-50%'>home</Link>
                     <Link to="/" className='text-[0.8rem] font-stretch-50%'>became a host</Link>
