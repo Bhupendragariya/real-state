@@ -58,7 +58,7 @@ export default function About() {
           </div>
 
         </div>
-        <div className='md:grid md:grid-cols-2  gap-30 pt-[5rem]  items-center '>
+        <div className='lg:grid lg:grid-cols-2  gap-30 pt-[5rem]  items-center '>
           <div  className='relative justify-items-center bg-cover justify-self-center'>
             <div className='absolute  md:pt-10 pl-10 pr-20 pt-5 '>
               <h3 className='text-2xl  text-balance '>The new way to find your new home</h3>
@@ -71,26 +71,26 @@ export default function About() {
               <img src={illustration} alt="" />
             </div>
           </div>
-          <div  className='md:grid md:grid-cols-2 md:gap-10 justify-self-center items-center'>
-            <div className='justify-items-center md:justify-items-start md:pt-0 pt-6'>
+          <div  className='md:grid md:grid-cols-2 md:gap-10 justify-self-center items-center  '>
+            <div className='justify-items-center lg:justify-items-start lg:pt-0 pt-6'>
               <img src={iconone} alt="" className='object-cover items-center'/>
               <h4 className='text-xl font-bold  text-balance pt-4 '>Property Insurance</h4>
-              <p className='text-[0.8rem] text-balance  pt-4 md:text-start text-center'>We offer our customer property protection of liability coverage and insurance for their better life.</p>
+              <p className='text-[0.8rem] text-balance  pt-4 lg:text-start text-center'>We offer our customer property protection of liability coverage and insurance for their better life.</p>
             </div>
-            <div className='justify-items-center md:justify-items-start md:pt-0 pt-6'>
+            <div className='justify-items-center lg:justify-items-start lg:pt-0 pt-6 '>
               <img src={icontwo} alt="" />
               <h4 className='text-xl font-bold  text-balance pt-4'>Property Insurance</h4>
-              <p className='text-[0.8rem] text-balance pt-4 md:text-start text-center'>We offer our customer property protection of liability coverage and insurance for their better life.</p>
+              <p className='text-[0.8rem] text-balance pt-4 lg:text-start text-center'>We offer our customer property protection of liability coverage and insurance for their better life.</p>
             </div>
-            <div className='justify-items-center md:justify-items-start md:pt-0 pt-6'>
+            <div className='justify-items-center lg:justify-items-start lg:pt-0 pt-6'>
               <img src={iconone} alt="" />
               <h4 className='text-xl font-bold  text-balance pt-4'>Property Insurance</h4>
-              <p className='text-[0.8rem] text-balance pt-4 md:text-start text-center'>We offer our customer property protection of liability coverage and insurance for their better life.</p>
+              <p className='text-[0.8rem] text-balance pt-4 lg:text-start text-center'>We offer our customer property protection of liability coverage and insurance for their better life.</p>
             </div>
-            <div className='justify-items-center md:justify-items-start md:pt-0 pt-6'>
+            <div className='justify-items-center lg:justify-items-start lg:pt-0  pt-6'>
               <img src={iconone} alt="" />
               <h4 className='text-xl font-bold  text-balance  pt-4'>Property Insurance</h4>
-              <p className='text-[0.8rem] text-balance pt-4 md:text-start text-center '>We offer our customer property protection of liability coverage and insurance for their better life.</p>
+              <p className='text-[0.8rem] text-balance pt-4 lg:text-start text-center '>We offer our customer property protection of liability coverage and insurance for their better life.</p>
             </div>
           </div>
 

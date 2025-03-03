@@ -6,7 +6,7 @@ import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 export default function Contactus() {
 
 
-    const { register, handleSubmit, watch, formState: { errors } } = useForm();
+    const {handleSubmit,  formState: { errors } } = useForm();
 
     const onSubmit = data => console.log(data)
         
