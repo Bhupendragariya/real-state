@@ -3,6 +3,7 @@ import logo from "../assets/image/logo(1).png"
 import logoone from "../assets/image/SocialMediacard(5).png"
 import logotwo from "../assets/image/SocialMediacard(6).png"
 import logothree from "../assets/image/SocialMediacard(7).png"
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -15,7 +16,7 @@ export default function Footer() {
                     <p>call: 123456789</p>
                     <p className='lg:w-[10rem] w-[10rem]  text-[0.8rem] font-stretch-50% text-center' >Praesent nulla massa, hendrerit vestibulum gravida in, feugiat auctor felis. </p>
 
-                    <p className='text-[0.8rem] font-stretch-50% text-center'><a href="">Email:exampal@email.com</a></p>
+                    <p className='text-[0.8rem] font-stretch-50% text-center'><Link href="">Email:exampal@email.com</Link></p>
                 </div>
                 <div className='md:justify-items-center items-center  capitalize flex flex-col gap-4'>
                     <p className=' md:text-xl '>fetures</p>

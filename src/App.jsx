@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import HeaderTop from './componant/HeaderTop';
 import Header from './componant/Header';
-import Footer from './componant/footer';
+import Footer from './componant/Footer';
 import Home from './componant/Home';
 import Gallery from './componant/Gallery';
 import Blog from './componant/Blog';
+import About from "./componant/About";
+import Contactus from './componant/Contactus';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 
@@ -37,7 +39,27 @@ const router = createBrowserRouter([
       <Blog/>
       <Footer/>
     </div>
-  }
+  },
+  {
+    path:"/aboutus",
+    element:
+    <div>
+      <Header/>
+      <About/>
+      <Footer/>
+    </div>
+  },
+  {
+    path:"/contactus",
+    element:
+    <div>
+      <Header/>
+      <Contactus/>
+      <Footer/>
+    </div>
+  },
+  
+
 ]);
 
 

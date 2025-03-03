@@ -14,9 +14,7 @@ export default function Gallery() {
     <>
 
           
-        <div>
-            <img src="" alt="" />
-        </div>
+        
         <div style={{
             backgroundImage: `URL(${imgbg})`,
 

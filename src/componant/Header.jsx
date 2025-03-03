@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import socialone from "../assets/image/SocialMediacard(1).png"
 import socialtwo from "../assets/image/SocialMediacard(2).png"
 import socialthree from "../assets/image/SocialMediacard(3).png"
@@ -17,6 +17,7 @@ export default function Header() {
        setIsMenuOpen(!isMenuOpen)
    
      };
+     
     
 
     return (
@@ -44,12 +45,12 @@ export default function Header() {
                     </div>
                     <div className='hidden lg:flex lg:gap-5 items-center capitalize'>
                         <NavLink to="/">home</NavLink>
-                        <NavLink to="/">about us</NavLink>
-                        <NavLink to="/">our agents</NavLink>
+                        <NavLink to="/aboutus">about us</NavLink>
+                        {/* <NavLink to="/ouragent">our agents</NavLink> */}
                         <NavLink to="/gallery">gallery</NavLink>
                         <NavLink to="/blog">blog</NavLink>
-                        <NavLink to="/">contactus</NavLink>
-                        <NavLink to="/">serach</NavLink>
+                        <NavLink to="/contactus">contact us</NavLink>
+                        {/* <NavLink to="/">serach</NavLink> */}
                     </div>
                     <button className='lg:hidden  ' onClick={handleMenuToggle}>
                         <i className="fa-solid fa-bars"></i>
@@ -65,13 +66,13 @@ export default function Header() {
                     <div >
                         <ul className='pt-7 text-center capitalize'>
                             <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/">home</NavLink></li>
-                            <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/">about us</NavLink></li>
-                            <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/">our agents</NavLink></li>
+                            <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/aboutus">about us</NavLink></li>
+                            {/* <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/ouragent">our agents</NavLink></li> */}
                             <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/gallery">gallery</NavLink></li>
                             <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/blog">blog</NavLink></li>
-                            <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/">contactus</NavLink></li>
-                            <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/">serach</NavLink></li>
-                            <li className='m-3 p-3 hover:bg-amber-200 rounded-xl capitalize '><NavLink to="/"><button type='button'>addlisting</button></NavLink></li>
+                            <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/contactus">contact us</NavLink></li>
+                            {/* <li className='m-3 p-3 hover:bg-amber-200 rounded-xl'><NavLink to="/">serach</NavLink></li>
+                            <li className='m-3 p-3 hover:bg-amber-200 rounded-xl capitalize '><NavLink to="/"><button type='button'>addlisting</button></NavLink></li> */}
                         </ul>
                     </div>
                 </div>
