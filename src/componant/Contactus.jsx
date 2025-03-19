@@ -9,6 +9,7 @@ export default function Contactus() {
     const {handleSubmit,  formState: { errors } } = useForm();
 
     const onSubmit = data => console.log(data)
+   
         
     
 
@@ -55,7 +56,7 @@ export default function Contactus() {
                         </div>
                         
                         <div>
-                        <input type="submit" className='w-full rounded-xl bg-amber-500 mt-5 pt-1 pb-1' />
+                        <input type="submit" className='w-full rounded-xl bg-amber-500 mt-5 pt-1 pb-1 cursor-pointer'  />
                         </div>
                     </form>
                 </div>
