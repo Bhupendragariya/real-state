@@ -20,11 +20,39 @@ export default function HeaderTop() {
   function handleMenuToggle() {
     setIsMenuOpen(!isMenuOpen);
   }
-  const cityOptions = [
-    { value: 'delhi', label: 'Delhi' },
-    { value: 'mumbai', label: 'Mumbai' },
-    { value: 'bangalore', label: 'Bangalore' }
-  ];
+  const cityOptions  = [
+    {
+      id: 1,
+      location: "delhi",
+      type: "4bhk",
+      rent: "$1200 - $1500",
+      
+    },
+    {
+      id: 2,
+      location: "Chandigarh",
+      type: "House",
+      rent: "$1800 - $2200",
+      
+    },
+    {
+      id: 3,
+      location: "delhi",
+      type: "2bhk",
+      rent: "$1600 - $2000",
+      
+    },
+    {
+      id: 3,
+      location: "dehardun",
+      type: "2bhk",
+      rent: "$1600 - $21000",
+    }
+];
+
+
+const [city, setCity]  = useState()
+
 
   return (
     <>
@@ -154,34 +182,34 @@ export default function HeaderTop() {
             <label htmlFor="location" className="text-center ">
               Location
             </label>
-            <Select
-              options={cityOptions}
-              placeholder="Select your city"
-              isSearchable
-              className="text-[0.9rem] font-stretch-20%"
-            />
+            <select id="location">
+            <option value="">Location your city</option>
+            {cityOptions.map((city, index) => (
+              <option key={index} value={city}>{city.location}</option>
+            ))}
+          </select>
           </div>
           <div className="grid md:gap-1 m-3 p-2">
             <label htmlFor="Property" className="text-center ">
               Property Type
             </label>
-            <Select
-              options={cityOptions}
-              placeholder="Select Property Type"
-              isSearchable
-              className="text-[0.9rem] font-stretch-20%"
-            />
+            <select id="type">
+            <option value="">Property Type your city</option>
+            {cityOptions.map((city, index) => (
+              <option key={index} value={city}>{city.type}</option>
+            ))}
+          </select>
           </div>
           <div className="grid md:gap-1 m-3 p-2">
             <label htmlFor="rent" className="text-center ">
               Rent Range
             </label>
-            <Select
-              options={cityOptions}
-              placeholder="Select Rent Range"
-              isSearchable
-              className="text-[0.9rem] font-stretch-20%"
-            />
+            <select id="rent">
+            <option value="">Rent Range your city</option>
+            {cityOptions.map((city, index) => (
+              <option key={index} value={city}>{city.rent}</option>
+            ))}
+          </select>
           </div>
           <div className="m-3 p-2">
             <button
